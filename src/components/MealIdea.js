@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import  dinner from '../images/dinner.jpg'
+import { Switch, Route, Redirect, withRouter, Link, NavLink } from 'react-router-dom';
 
 class MealIdea extends Component {
     state={
@@ -33,9 +34,14 @@ getRecipe = () => {
                 {this.state.pic}
                 
 			<p></p>
-               <Button onClick={this.getRecipe}>Get new idea!</Button>
+               <Button onClick={this.getRecipe}>Get new idea!</Button>&nbsp;&nbsp;
+               <Link to="/meals" className="btn btn-primary">Choose a favorite!</Link>
                <br /> <br />
+               <a href={this.state.recipe.spoonacularSourceUrl} target="blank">{this.state.recipe.title}</a>
+               <br />
                <img src={this.state.recipe.image} />
+               <br /> <br />
+
             </div>
         );
     }
