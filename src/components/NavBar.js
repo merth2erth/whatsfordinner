@@ -15,9 +15,9 @@ class NavBar extends Component {
 
                   
                         <ul role="nav">
-                                <li><NavLink activeClassName="is-active" to="/main" style={{color:"white"}}>Dashboard</NavLink></li>
-                                <li><NavLink activeClassName="is-active" to="/meals" style={{color:"white"}}>Meals</NavLink></li>
-                                <li><NavLink activeClassName="is-active" to="/calendar" style={{color:"white"}}>Calendar</NavLink></li>
+                                <li style={{color:"aquamarine"}}><NavLink activeClassName="is-active" to="/main" style={{color:"white"}}>Dashboard</NavLink></li>
+                                <li style={{color:"aquamarine"}}><NavLink activeClassName="is-active" to="/meals" style={{color:"white"}}>Meals</NavLink></li>
+                                <li style={{color:"aquamarine"}}><NavLink activeClassName="is-active" to="/calendar" style={{color:"white"}}>Calendar</NavLink></li>
                             </ul>
                             
   </div>

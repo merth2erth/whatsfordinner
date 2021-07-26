@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, FormGroup } from 'reactstrap';
+import MealList from './MealList';
 
 class Meals extends Component {
     render() {
@@ -27,6 +28,8 @@ class Meals extends Component {
                         Add Meal
                     </Button>
                 </form>
+                <p></p>
+                < MealList />
              </div>
         );
     }
