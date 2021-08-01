@@ -8,7 +8,7 @@ const MealList = (props) =>  {
     const dispatch = useDispatch()
             return (
             <div>
-                <Button onClick={() => dispatch(addMeal('grilled cheese'))}>Add Meal #2</Button>
+                <Button onClick={() => dispatch(addMeal('grilled cheese'))}>Add Meal</Button>
                 <ul>
                 {props.userMeals.map((meal) =>
                 <li key={meal}>

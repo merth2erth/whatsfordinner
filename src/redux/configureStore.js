@@ -16,7 +16,7 @@ export const deleteMeal = () => {
 }
 
 
-export const mealReducer = (state = ['hot dog'], action) => {
+export const mealReducer = (state = [], action) => {
     console.log("MealReducer", action)
     if (action.type === ADD_MEAL) {
         const newState = [...state]

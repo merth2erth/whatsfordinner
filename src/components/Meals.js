@@ -7,8 +7,7 @@ class Meals extends Component {
         return (
             <div className="container">
                 <p></p>
-                <form>
-                    <FormGroup>
+                <FormGroup>
                     <p>Meal Name:</p>
                         <input
                         type="text"
@@ -23,11 +22,7 @@ class Meals extends Component {
                         <option value="Dessert">Dessert</option>
                         <option value="Snack">Snack</option>
                     </select>
-                    </FormGroup>
-                    <Button>
-                        Add Meal
-                    </Button>
-                </form>
+                </FormGroup>
                 <p></p>
                 < MealList />
              </div>
