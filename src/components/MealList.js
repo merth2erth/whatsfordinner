@@ -3,6 +3,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import { connect, useDispatch } from 'react-redux';
 import { Button } from 'reactstrap';
 import { addMeal, deleteMeal } from '../redux/configureStore';
+import Meals from './Meals'
 
 const MealList = (props) =>  {
     const dispatch = useDispatch()
