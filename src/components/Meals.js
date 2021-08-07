@@ -12,15 +12,16 @@ class Meals extends Component {
         }
     };
 
-    // handleInputChange(event) {
-    //     const target = event.target;
-    //     const value = target.type 
-    //     const name = target.name;
+    handleInputChange = (event) => {
+        const target = event.target;
+        const value = target.value; 
+        const name = target.name;
     
-    //     this.setState({
-    //       [name]: value
-    //     });
-    //   }
+        this.setState({
+          [name]: value
+        },
+        ()=>console.log(this.state) );
+      }
 
     render() {
         return (
@@ -28,22 +29,22 @@ class Meals extends Component {
                 <p></p>
                 <Form>
                     <FormGroup>
-                    <label>
-                        Meal Name: 
+                    <label style={{margin:10}}>
+                        Meal Name: </label>
                         <input
                         name="mealName"
                         type="text"
                         value={this.state.mealName}
                         onChange={this.handleInputChange}
                         />
-                    </label>
+                    
                     </FormGroup>
                                               
-                    <label>Meal Type: 
+                    <label style={{margin:10}}>Meal Type: </label>
                     <select id = "dropdown"
                     name="mealType"
                     value={this.state.mealType} 
-                    // onChange={this.handleInputChange}
+                    onChange={this.handleInputChange}
                     >
                         <option value="Breakfast">Breakfast</option>
                         <option value="Lunch">Lunch</option>
@@ -51,8 +52,8 @@ class Meals extends Component {
                         <option value="Dessert">Dessert</option>
                         <option value="Snack">Snack</option>
                     </select>
-                    </label>
-                    <input type="submit" value="Submit" />
+                    
+                    {/* <input type="submit" value="Submit" onClick={() => console.log('submit')} /> */}
                 </Form>
                 <p></p>
                 < MealList />
