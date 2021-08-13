@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import  dinner from '../images/dinner.jpg'
-import { Switch, Route, Redirect, withRouter, Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class MealIdea extends Component {
     state={

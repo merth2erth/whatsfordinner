@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import Checkbox from '@material-ui/core/Checkbox';
 import { connect, useDispatch } from 'react-redux';
 import { Button } from 'reactstrap';
 import { addMeal, deleteMeal } from '../redux/configureStore';
-import Meals from './Meals'
 
 const MealList = (props) =>  {
     const dispatch = useDispatch()
+    console.log("props", props)
+    console.log("userMeal", props.userMeals)
             return (
             <div>
-                <Button onClick={() => dispatch(addMeal('grilled cheese'))}>Add Meal</Button>
+                <Button onClick={() => dispatch(addMeal(props.userMeals))}>Add Meal</Button>
                 <ul>
                 {props.userMeals.map((meal) =>
                 <li key={meal}>

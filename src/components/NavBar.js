@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
-import { Switch, Route, Redirect, withRouter, Link, NavLink } from 'react-router-dom';
-import Meals from './Meals';
-import Calendar from './CalendarPage';
-import Main from './Main'
+import { NavLink } from 'react-router-dom';
 
 class NavBar extends Component {
     render() {

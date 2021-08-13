@@ -44,12 +44,3 @@ h5 {
 .nav li {
   color: rgb(94, 204, 44);
 }
-
-.label {
-  color: #3d3d3d;
-  display: block;
-  font-family: sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 5px;
-}

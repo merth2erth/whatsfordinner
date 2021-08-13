@@ -32,14 +32,14 @@ export const mealReducer = (state = [], action) => {
     }
 }
 
-export const testReducer = (state="hi", action) => {
-    console.log("testReducer", action)
-    return state
-}
+// export const testReducer = (state="hi", action) => {
+//     console.log("testReducer", action)
+//     return state
+// }
 
 export const allReducers = combineReducers({
     userMeals: mealReducer,
-    testReducer: testReducer
+    //testReducer: testReducer
 })
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
